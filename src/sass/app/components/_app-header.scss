@@ -17,6 +17,12 @@
     font-size: 26px;
     padding: 0 15px;
     line-height: 50px;
+
+    @media(min-width: 769px){
+        flex:0 0 auto;
+        display: block;
+        width: 230px;
+    }
 }
 
 .app-search{
@@ -24,6 +30,10 @@
     display: flex;
     align-self: center;
     margin-right: 15px;
+
+    @media(max-width: 480px){
+        display: none;
+    }
 }
 .app-search__input{
     border: 0;
@@ -42,4 +52,30 @@
     color: rgba(0,0,0,.8);
     background: none;
     cursor: pointer;
+
+    
+}
+
+.app-nav{
+    @include list-unstyled();
+    display: flex;
+    margin-bottom: 0;
+    justify-content: flex-end;
+
+    @media(min-width: 768px){
+        flex: 1 0 auto;
+    }
+
+}
+
+.app-nav__item{
+    display: block;
+    padding: 18px;
+    line-height: 18px;
+    color: white;
+    transition: background-color 0.3s ease;
+    &:hover,
+    &:focus{
+        background: rgba(0,0,0,0.1);
+    }
 }
