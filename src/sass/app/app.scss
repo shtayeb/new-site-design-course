@@ -24,6 +24,15 @@ img {
     color: white;
   }
 }
+
+.marginMeet {
+  margin: 0rem 0.6rem;
+}
+
+.decorationNone {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -32,6 +41,10 @@ header {
   .logo {
     color: #00f7ff;
     font-weight: bold;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
   }
 
   nav {
@@ -55,6 +68,7 @@ header {
 
 .hero {
   background: #6e00ff;
+  // background-image: url(images/herobg.jpg) no-repeat center center fixed;
   color: white;
   display: grid;
   text-align: center;
@@ -160,7 +174,22 @@ section {
   margin-bottom: 2em;
 }
 
+.logoimage {
+  display: block;
+}
+
+.logoname {
+  display: none;
+}
+
 @media only screen and (min-width: 800px) {
+  .logoimage {
+    display: none;
+  }
+
+  .logoname {
+    display: block;
+  }
   .featured,
   .portfolio {
     text-align: left;
