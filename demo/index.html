@@ -1,81 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel='stylesheet' href="/css/app.css">
-</head>
-<body class="app sidebar-min">
-
-    <header class="app-header">
-        <a href="/" class="app-header__logo">HQ Admin</a>
-        <ul class="app-nav">
-            <li class="app-search">
-                <input type="search" name="" id="" class="app-search__input" placeholder="Search">
-                <button class="app-search__button"><i class="fa fa-search"></i></button>
-            </li>
-            <li class="dropdown">
-                <a href="#" data-toggle="dropdown" aria-label="Open Menu" class="app-nav__item">
-                   <i class="fa fa-user fa-lg"></i> 
-                </a>
-                <ul class="dropdown-menu setting-menu dropdown-menu-right">
-                    <li><a class="dropdown-item" href=""><i class="fa fa-cog"></i>Settings</a></li>
-                    <li><a class="dropdown-item" href=""><i class="fa fa-user"></i>Profile</a></li>
-                    <li><a class="dropdown-item" href=""><i class="fa fa-sign-out-alt"></i>Logout</a></li>
-                </ul>
-            </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHTB</title>
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <!-- the Top Header -->
+    <div class="nav-container">
+      <header>
+        <a href="index.html" class="logo"> SHTAYEB </a>
+        <nav>
+          <ul>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">Contact</a></li>
+            <!-- <li><a href="#">Work</a></li> -->
+          </ul>
+        </nav>
+      </header>
+      <div class="social-header">
+        <ul>
+          <li>
+            <a href="#"><img src="images/facebook.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/insta.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/gmail.png" alt="" /></a>
+          </li>
         </ul>
-    </header>
+      </div>
+    </div>
+    <!-- End of the Header -->
 
-
-    <aside class="app-sidebar">
-        <ul class="app-menu">
-            <li><a class=".app-menu__item" href="">test</a></li>
-            <li><a class=".app-menu__item" href="">test</a></li>
-            <li><a class=".app-menu__item" href="">test</a></li>
-            <li><a class=".app-menu__item" href="">test</a></li>
-            <li><a class=".app-menu__item" href="">test</a></li>
-        </ul>
-    </aside>
-
-    <main class="app-content">
-        <div class="app-title">
-
+    <!-- the hero -->
+    <div class="hero">
+      <div class="content">
+        <h1>Beautifully Crafted Web Experiences</h1>
+        <div class="meet">
+          <span
+            ><i class="fa fa-arrow-circle-down" aria-hidden="true"></i
+          ></span>
+          <p style="margin-left: 2rem">Meet Shahryar Tayeb</p>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Card Title</h2>
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A cumque assumenda maxime enim illum consequatur magnam repudiandae, delectus tenetur, sapiente ipsam veniam suscipit est dolor eveniet, animi numquam amet explicabo.
-                    </div>
-                    <div class="card-footer">
-                        Card Footer
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mt-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Card Title</h2>
-                    </div>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A cumque assumenda maxime enim illum consequatur magnam repudiandae, delectus tenetur, sapiente ipsam veniam suscipit est dolor eveniet, animi numquam amet explicabo.
-                    </div>
-                    <div class="card-footer">
-                        Card Footer
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-    
 
+        <i class="fa fa-toggle-on fa-2x scroll" aria-hidden="true"></i>
+      </div>
+      <!-- place for the svg graphic -->
+      <img src="images/test.png" alt="hero" class="hero-design" />
+    </div>
+
+    <!--featured  -->
+    <section class="featured">
+      <div class="left">
+        <div class="inner transition2">
+          <p class="subtitle">my udemy Course</p>
+          <a class="featured-title" href="">No B*S Lightroom Classic Course</a>
+          <p class="featured-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            quisquam?
+          </p>
+        </div>
+      </div>
+      <img src="images/logo_2.jpg" class="right transition2" alt="" />
+    </section>
     <script src="/js/app.js"></script>
-</body>
+
+    <!-- the skills -->
+    <section class="skills">
+      <div class="skills-container">
+        <ul>
+          <li class="transition2">
+            <div class="icon-container one">
+              <img src="images/herobg.jpg" alt="" />
+            </div>
+            <p class="skill-title">UI UX Design</p>
+            <p class="featured-desc skill-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              fugiat molestiae vitae quisquam qui alias veritatis aperiam maxime
+              soluta sit?
+            </p>
+          </li>
+          <li class="transition2">
+            <div class="icon-container two">
+              <img src="images/herobg.jpg" alt="" />
+            </div>
+            <p class="skill-title">UI UX Design</p>
+            <p class="featured-desc skill-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              fugiat molestiae vitae quisquam qui alias veritatis aperiam maxime
+              soluta sit?
+            </p>
+          </li>
+          <li class="transition3">
+            <div class="icon-container three">
+              <img src="images/herobg.jpg" alt="" />
+            </div>
+            <p class="skill-title">UI UX Design</p>
+            <p class="featured-desc skill-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+              fugiat molestiae vitae quisquam qui alias veritatis aperiam maxime
+              soluta sit?
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- the list -->
+    <section class="portfolio">
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Guitar App</p>
+            <p class="featured-title">Fretastic.com</p>
+            <p class="featured-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis unde harum voluptatem dolores nam deserunt!
+              Consectetur, non sint voluptatum error esse fugit modi, sit
+              officiis impedit ipsa eum. Ratione, assumenda?
+            </p>
+          </div>
+        </div>
+        <a href="#"><img src="images/dcapp.jpg" alt="" /></a>
+      </div>
+
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Guitar App</p>
+            <p class="featured-title">Fretastic.com</p>
+            <p class="featured-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis unde harum voluptatem dolores nam deserunt!
+              Consectetur, non sint voluptatum error esse fugit modi, sit
+              officiis impedit ipsa eum. Ratione, assumenda?
+            </p>
+          </div>
+        </div>
+        <a href="#"><img src="images/dcapp.jpg" alt="" /></a>
+      </div>
+
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Guitar App</p>
+            <p class="featured-title">Fretastic.com</p>
+            <p class="featured-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis unde harum voluptatem dolores nam deserunt!
+              Consectetur, non sint voluptatum error esse fugit modi, sit
+              officiis impedit ipsa eum. Ratione, assumenda?
+            </p>
+          </div>
+        </div>
+        <a href="#"><img src="images/dcapp.jpg" alt="" /></a>
+      </div>
+    </section>
+  </body>
 </html>
